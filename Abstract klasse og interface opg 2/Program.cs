@@ -2,20 +2,22 @@
 using System;
 
 // See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
-Console.WriteLine("HEJ");
-Console.WriteLine("Hva sker der aer vi glar?");
+
 
 Spacestation sk = new Skywalker();
 Spacestation d = new Deathstar();
+Spacestation dV = new Darthvader();
 
-Spacestation[] s = new Spacestation[2];
+Spacestation[] s = new Spacestation[3];
 
-s[0] = sk;
-s[1] = d;
+s[0] = dV;
+s[1] = sk;
+s[2] = d;
 
 for (int i = 0; i < s.Length; i++)
 {
     s[i].Firelaser();
+    Console.ReadKey();
   
 }
+
